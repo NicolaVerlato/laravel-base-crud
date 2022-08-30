@@ -13,19 +13,7 @@
                 <p><i>{{ $comic->description }}</i></p>
             </div>
             <div>
-                <div>
-                    Data di pubblicazione: {{ $comic->sale_date }}
-                </div>
-                <div>
-                    Della serie: {{ $comic->series }}
-                </div>
-                <div>
-                    Tipologia: {{ $comic->type }}
-                </div>
-                <div>
-                    Prezzo: {{ $comic->price }} &euro;
-                </div>
-                <a href="#">Vai al dettaglio</a>
+                <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">Vai al dettaglio</a>
             </div>
         </div>
         <br>
