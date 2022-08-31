@@ -18,6 +18,13 @@
             <div>
                 <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modifica</a>
             </div>
+            <div>
+                <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <input type="submit" value="Elimina">
+                </form>
+            </div>
         </div>
         <br>
     @endforeach

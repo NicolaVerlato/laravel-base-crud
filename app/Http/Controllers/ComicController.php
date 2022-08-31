@@ -115,7 +115,10 @@ class ComicController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $delete_comic = Comic::findOrFail($id);
+        $delete_comic->delete();
+
+        return redirect()->route('comics.index');
     }
 
     // funzione per validazione campi nel form
