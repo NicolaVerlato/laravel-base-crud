@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
     <header>
@@ -23,7 +23,9 @@
         </ul>
     </header>
     <main>
-        @yield('main_content')
+        <div class="container">
+            @yield('main_content')
+        </div>
     </main>
 </body>
 </html>
