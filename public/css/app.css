@@ -12648,3 +12648,8 @@ header {
   background-color: blueviolet;
 }
 
+h1,
+.h1 {
+  padding: 20px 0;
+}
+
