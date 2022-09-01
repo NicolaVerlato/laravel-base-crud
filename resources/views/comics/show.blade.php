@@ -5,8 +5,8 @@
         {{ $comics->title }}
     </h1>
     <div>
-        <img src="{{ $comics->thumb }}" alt="{{ $comics->title }}">
-        <p><i>{{ $comics->description }}</i></p>
+        <img class="py-1" src="{{ $comics->thumb }}" alt="{{ $comics->title }}">
+        <p class="py-3"><i>{{ $comics->description }}</i></p>
     </div>
     <div>
     <div>

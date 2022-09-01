@@ -12634,3 +12634,17 @@ fieldset:disabled .btn {
   }
 }
 
+li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: blueviolet;
+}
+

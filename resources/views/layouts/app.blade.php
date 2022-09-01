@@ -10,17 +10,19 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li>
-                <a href="{{ route('home') }}">Home</a>
-            </li>
-            <li>
-                <a href="{{ route('comics.index') }}">Prodotti</a>
-            </li>
-            <li>
-                <a href="{{ route('comics.create') }}">Aggiungi il tuo fumetto</a>
-            </li>
-        </ul>
+        <div class="container">
+            <ul class="d-flex align-items-center p-4">
+                <li>
+                    <a href="{{ route('home') }}">Home</a>
+                </li>
+                <li>
+                    <a href="{{ route('comics.index') }}">Prodotti</a>
+                </li>
+                <li>
+                    <a href="{{ route('comics.create') }}">Aggiungi il tuo fumetto</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
         <div class="container">
